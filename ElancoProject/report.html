@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Report a Sighting | Tick Sightings Tracker</title>
+
+    <link rel="stylesheet" href="report.css">
+</head>
+<body>
+
+    <!-- Header matching the Map page -->
+    <header>
+        <h1>UK Tick Sightings</h1>
+
+        <nav>
+            <a href="index.html">DashBoard</a>
+            <a href="education.html">Tick Guide</a>
+            <a href="report.html">Report a Sighting</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Introduction -->
+        <section class="intro">
+            <h1>Report a Tick Sighting</h1>
+
+            <p>
+                Help us track tick activity by reporting a sighting.
+                Complete the form below with as much accurate information as possible.
+            </p>
+        </section>
+
+        <!-- Report form -->
+        <section class="report-card">
+            <h2>Sighting Details</h2>
+
+            <p class="form-description">
+                Fields marked with * are required.
+            </p>
+
+            <form id="report-form">
+
+                <div class="form-group">
+                    <label for="sighting-date">Date *</label>
+                    <input
+                        type="date"
+                        id="sighting-date"
+                        name="date"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="sighting-time">Time *</label>
+                    <input
+                        type="time"
+                        id="sighting-time"
+                        name="time"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="location">Location *</label>
+                    <input
+                        type="text"
+                        id="location"
+                        name="location"
+                        placeholder="e.g. London, Hyde Park"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="species">Tick Species *</label>
+
+                    <select id="species" name="species" required>
+                        <option value="">Select a species</option>
+                        <option value="Southern rodent tick">Southern rodent tick</option>
+                        <option value="Passerine tick">Passerine tick</option>
+                        <option value="Fox/badger tick">Fox/badger tick</option>
+                        <option value="Marsh tick">Marsh tick</option>
+                        <option value="Tree-hole tick">Tree-hole tick</option>
+                        <option value="Unknown">Unknown / Not sure</option>
+                    </select>
+                </div>
+
+                
+<div class="form-group">
+    <label for="sighting-image">Upload an Image (optional)</label>
+
+    <input
+        type="file"
+        id="sighting-image"
+        name="image"
+        accept="image/*"
+    >
+
+    <!-- Preview of the selected image -->
+    <img
+        id="image-preview"
+        alt="Preview of the selected tick image"
+        hidden
+        style="max-width: 250px; margin-top: 10px;"
+    >
+    <button type="button" id="clear-image" hidden>
+    Remove Image
+</button>
+
+    <p class="help-text">
+        Upload a photo to help identify the tick.
+    </p>
+</div>
+
+
+                <div class="form-group">
+                    <label for="description">Additional Information (optional)</label>
+
+                    <textarea
+                        id="description"
+                        name="description"
+                        rows="4"
+                        placeholder="Describe where you found the tick..."
+                    ></textarea>
+                </div>
+
+                <!-- JavaScript validation messages will appear here -->
+                <div id="form-message" role="status" aria-live="polite"></div>
+
+                <button type="submit" class="submit-button">
+                    Submit Sighting
+                </button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Tick Sightings Tracker | Report responsibly and stay tick-aware.</p>
+    </footer>
+
+    <script src="report.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,187 @@
+
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f4;
+    color: #26352b;
+}
+
+/* Header — matches the Map page */
+header {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-bottom: 1px solid #dce5dc;
+}
+
+/* Website title */
+header h1 {
+    margin: 0 0 15px;
+    color: #245c3a;
+   
+}
+
+/* Navigation links */
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #245c3a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #183f29;
+}
+
+/* Main content */
+main {
+    max-width: 1000px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+/* Introduction and form cards */
+.intro,
+.report-card {
+    background-color: #ffffff;
+    padding: 28px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Headings inside the page */
+main h1,
+main h2 {
+    color: #245c3a;
+}
+
+.intro h1 {
+    margin-top: 0;
+}
+
+.report-card h2 {
+    margin-top: 0;
+}
+
+.form-description {
+    color: #68766f;
+    margin-bottom: 25px;
+}
+
+/* Form fields */
+.form-group {
+    margin-bottom: 22px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd8d0;
+    border-radius: 7px;
+    font: inherit;
+    background-color: #ffffff;
+    color: #26352b;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #72ad91;
+    border-color: #245c3a;
+}
+
+input[type="file"] {
+    background-color: #f8fbf9;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.help-text {
+    font-size: 14px;
+    color: #68766f;
+    margin: 6px 0 0;
+}
+
+/* Submit button */
+.submit-button {
+    background-color: #245c3a;
+    color: #ffffff;
+    border: none;
+    padding: 13px 22px;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #183f29;
+}
+
+/* JavaScript validation message area */
+#form-message {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px 15px;
+    color: #68766f;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+    header {
+        padding: 20px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    main {
+        margin-top: 20px;
+    }
+
+    .intro,
+    .report-card {
+        padding: 20px;
+    }
+
+    
+}
+#form-message.error {
+    color: #c62828;
+}
+
+#form-message.warning {
+    color: #a76500;
+}
+
+#form-message.success {
+    color: #247653;
+}

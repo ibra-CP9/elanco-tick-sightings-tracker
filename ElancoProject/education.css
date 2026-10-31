@@ -1,0 +1,137 @@
+
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f4;
+    color: #26352b;
+   
+}
+
+/* Header — matches the map page */
+header {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-bottom: 1px solid #dce5dc;
+}
+
+/* Website title */
+header h1 {
+    margin: 0 0 15px;
+    color: #245c3a;
+}
+
+/* Navigation links */
+nav {
+    display: flex;
+    gap: 25px;
+    
+}
+
+nav a {
+    color: #245c3a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover,
+nav a.active {
+    color: #183f29;
+}
+
+/* Main content */
+main {
+    max-width: 1300px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+/* Content sections */
+section {
+    background-color: #ffffff;
+    padding: 28px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+h1,
+h2,
+h3 {
+    color: #245c3a;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+/* Species and prevention cards */
+.species-grid,
+.prevention-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.species-card,
+.prevention-card {
+    background-color: #f9fcfa;
+    border: 1px solid #dce5dc;
+    border-radius: 12px;
+    padding: 22px;
+}
+
+.species-card h3,
+.prevention-card h3 {
+    margin-top: 0;
+}
+
+.species-card p:last-child,
+.prevention-card p:last-child {
+    margin-bottom: 0;
+}
+
+.species-card em {
+    color: #68766f;
+}
+
+.source-link {
+    color: #245c3a;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px 15px;
+    color: #68766f;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+    header {
+        padding: 20px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    main {
+        margin-top: 20px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .species-grid,
+    .prevention-grid {
+        grid-template-columns: 1fr;
+    }
+}

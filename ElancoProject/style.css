@@ -1,0 +1,172 @@
+/* General page styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f4;
+    color: #26352b;
+}
+
+/* Top section */
+header {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-bottom: 1px solid #dce5dc;
+}
+
+/* Website title */
+header h1 {
+    margin: 0 0 15px;
+    color: #245c3a;
+}
+
+/* Navigation links */
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #245c3a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main dashboard layout */
+main {
+    display: flex;
+    gap: 24px;
+    padding: 24px;
+    align-items: flex-start;
+}
+
+/* Left sidebar */
+aside {
+    width: 320px;
+    flex-shrink: 0;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+/* Right side */
+#map-section {
+    flex: 1;
+    min-width: 0;
+}
+
+/* Summary cards */
+.summary-cards {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.summary-cards article {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 18px;
+    border-radius: 12px;
+}
+
+.summary-cards h3 {
+    margin-top: 0;
+    font-size: 16px;
+}
+
+.summary-cards p {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+/* Map placeholder */
+/* Interactive map */
+#map {
+    height: 500px;
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Filter controls */
+aside label,
+aside select,
+aside input,
+aside button {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+}
+
+aside select,
+aside input,
+aside button {
+    padding: 10px;
+}
+
+aside button {
+    background-color: #245c3a;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+#sighting-details {
+    background: white;
+    padding: 20px;
+    margin-top: 16px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+#sighting-details h2 {
+    margin-top: 0;
+}
+@media (max-width: 800px) {
+    main {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #map-section {
+        width: 100%;
+    }
+
+    .summary-cards {
+        flex-wrap: wrap;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+}
+
+.sighting-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.action-button {
+    display: inline-block;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 6px;
+    background-color: #205c3b;
+    color: white;
+    text-decoration: none;
+    font: inherit;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.action-button:hover {
+    background-color: #17452c;
+}
+

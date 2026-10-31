@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uk Ticks Sightings</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/maplibre-gl@5.21.0/dist/maplibre-gl.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/maplibre-gl@5.21.0/dist/maplibre-gl.js"></script>
+</head>
+<body>
+    <header>
+    <h1>UK Tick Sightings</h1>
+
+
+    <nav>
+        <a href="index.html">DashBoard</a>
+        <a href="education.html">Tick Guide</a>
+        <a href="report.html">Report a Sighting</a>
+    </nav>
+    
+    </header>
+    <main>
+        <aside>
+            <h2>Explore Sightings</h2>
+            <section>
+                <h3>Filters</h3>
+                <label for="species-filter">Species</label>
+                <select  id="species-filter">
+                    <option value = "all">All species</option>
+                </select>
+                <label for="severity-filter">Severity</label>
+<select id="severity-filter">
+    <option value="all">All Severities</option>
+    <option value="Low">Low</option>
+    <option value="Medium">Medium</option>
+    <option value="High">High</option>
+</select>
+<label for="start-date">From date</label>
+<input type="date" id="start-date">
+
+<label for="end-date">To date</label>
+<input type="date" id="end-date">
+
+<button id="filter-button">Apply Filters</button>
+            </section>
+            <section>
+                <h3>Recent Sightings</h3>
+                <div id="sightings-lists">
+                  
+                </div>
+            </section>
+        </aside>
+        <section id="map-section">
+            <div class="summary-cards">
+                <article>
+                    <h3>Total Sightings</h3>
+                    <p id="total-sightings">-</p>
+                </article>
+                <article>
+                    <h3>Species Recorded</h3>
+                    <p id="total-species">-</p>
+                </article>
+            </div>
+            <h2>UK Sighting Map</h2>
+<section id="map"></section>
+
+<section id="sighting-details">
+    <h2>Sighting Information</h2>
+    <p>Click a map marker to view sighting details.</p>
+</section>
+        </section>
+    </main>
+    <script src="java.js"></script>
+</body>
+</html>
