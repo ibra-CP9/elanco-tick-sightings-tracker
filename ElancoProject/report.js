@@ -125,7 +125,7 @@ reportForm.addEventListener("submit", function (event) {
         description: description
     };
 
-    // Temporary confirmation for testing only
+    
     try {
     saveReport(report);
 
@@ -162,5 +162,5 @@ if (date > todayString) {
     return;
 }
 
-    // Do not reset the form until saving is implemented.
+    
 });
