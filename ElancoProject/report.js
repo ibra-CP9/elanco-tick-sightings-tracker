@@ -99,6 +99,17 @@ reportForm.addEventListener("submit", function (event) {
         showMessage("Please complete all required fields.", "error");
         return;
     }
+    const today = new Date();
+const todayString = [
+    today.getFullYear(),
+    String(today.getMonth() + 1).padStart(2, "0"),
+    String(today.getDate()).padStart(2, "0")
+].join("-");
+
+if (date > todayString) {
+    showMessage("The sighting date cannot be in the future.", "error");
+    return;
+}
 
 
     // Check the selected image again during submission
@@ -150,17 +161,7 @@ reportForm.addEventListener("submit", function (event) {
         "error"
     );
 }
-    const today = new Date();
-const todayString = [
-    today.getFullYear(),
-    String(today.getMonth() + 1).padStart(2, "0"),
-    String(today.getDate()).padStart(2, "0")
-].join("-");
-
-if (date > todayString) {
-    showMessage("The sighting date cannot be in the future.", "error");
-    return;
-}
+    
 
     
 });
