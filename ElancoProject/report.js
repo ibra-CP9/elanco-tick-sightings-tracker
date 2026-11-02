@@ -91,7 +91,7 @@ reportForm.addEventListener("submit", function (event) {
     const species = speciesInput.value;
     const description = descriptionInput.value.trim();
     const image = imageInput.files[0];
-    const STORAGE_KEY = "tickReports";
+    
 
 
     // Check required fields
