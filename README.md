@@ -113,7 +113,7 @@ An internet connection is required to load the API data and map resources.
 ## Use of AI
 
 I used AI tools to help build most of the code for this project. I reviewed and
-tested the code, and I can explain how each part works in the walkthrough video.
+tested the code.
 
 ## Author
 
